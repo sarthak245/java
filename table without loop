@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class rough{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Which table you want");
+        int inp = sc.nextInt();
+
+        System.out.println(inp+" x 1 = "+inp*1);
+        System.out.println(inp+" x 2 = "+inp*2);
+        System.out.println(inp+" x 3 = "+inp*3);
+        System.out.println(inp+" x 4 = "+inp*4);
+        System.out.println(inp+" x 5 = "+inp*5);
+        System.out.println(inp+" x 6 = "+inp*6);
+        System.out.println(inp+" x 7 = "+inp*7);
+        System.out.println(inp+" x 8 = "+inp*8);
+        System.out.println(inp+" x 9 = "+inp*9);
+        System.out.println(inp+" x 10 = "+inp*10);
+
+    }
+}
