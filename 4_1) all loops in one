@@ -1,0 +1,50 @@
+import java.util.*;
+
+public class rough{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+    
+
+    // for loop
+    for (int i=0; i<11 ; i++){
+        System.out.println("hyy Kalapi");
+
+    }
+
+
+    // while loop
+    int j=0;
+    while(j<11){
+        System.out.println("hello mausamee");
+        j++;
+    }
+
+
+    // do while loop
+    int k=0;
+    do{
+        System.out.println("hyy keshvi");
+        k++;
+    }while(k<11);
+    // first code run and then condition checked
+    // in this loop , atleast 1 time code exicuted
+    // after one time if condition is true than it will exicuted
+    // if you want to run code atleast 1 time than only you use this loop
+
+
+    
+    // test btw while and do while
+
+    int z=12;
+
+    while(z<11){
+        System.out.println("apna college");
+        z++;
+    }             //  nothing will print
+
+    do{
+        System.out.println("apni kaksha");
+        z++;
+    }while(z<11);
+    }             //  code run 1 time and then nothing will hapen
+}
