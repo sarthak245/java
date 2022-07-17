@@ -1,0 +1,17 @@
+import java.util.*;
+ 
+public class rough {
+    public static int add(int a, int b){
+        int k = a+ b;
+
+        return k;
+    }
+
+   public static void main(String args[]) {
+       Scanner sc = new Scanner(System.in);
+       int k = sc.nextInt();
+       int l = sc.nextInt();
+
+       System.out.println("sum of two numbers is : "+add(k,l));
+   }   
+}
