@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class rough {
+
+    public static void greater(int a, int b){
+        
+        if(a>b){
+            System.out.println(a);
+        } else{
+            System.out.println(b);
+        }
+    }
+     
+
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter the value of n");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println("greater number is:");
+        greater(a,b);
+    }
+}
