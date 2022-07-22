@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class rough {
+
+    public static void power(int x, int n){
+        int k = 1;
+        for (int i=1; i<=n; i++){
+            k *= x;
+        }
+        System.out.println(k);
+    }
+
+    public static void main(String args[]) {
+    Scanner sc =  new Scanner(System.in);  
+    System.out.println("if you print x^n than enter first number as x and its power as n:");
+    System.out.print("enter x: ");
+    int x = sc.nextInt(); 
+    System.out.print("enter n: "); 
+    int n = sc.nextInt();  
+
+    System.out.print("x^n is: ");
+    power(x, n);
+    }
+}
