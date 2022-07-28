@@ -5,6 +5,29 @@ public class rough{
         Scanner sc = new Scanner(System.in);
 
         int array[] = {1,2,3,4,5,6,7,8,9};
+        System.out.println("original array : "+ Arrays.toString(array));
+
+        int i;
+        for(i=0; i<array.length / 2 ; i++){
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
+        }
+        
+        System.out.println("reversed array : "+Arrays.toString(array));
+        
+    }
+}
+
+---------------------------------------------  different logic  --------------------------------------------
+
+import java.util.*;
+
+public class rough{
+    public static void main(String[] args){   
+        Scanner sc = new Scanner(System.in);
+
+        int array[] = {1,2,3,4,5,6,7,8,9};
         int newArray[] = new int[array.length];
 
         int i;
