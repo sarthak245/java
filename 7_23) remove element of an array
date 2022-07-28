@@ -1,0 +1,54 @@
+-------------------------------------------------   remove element by index  --------------------------------------
+
+import java.util.*;
+
+public class rough{
+    public static void main(String[] args){   
+        Scanner sc = new Scanner(System.in);
+
+        int array[] = {1,2,3,4,5,6,7,8,9};
+        int removedArray[] = new int[array.length - 1];
+
+        int index=3;
+        
+        for (int i=0; i<index;i++){
+            removedArray[i] = array[i];
+        }
+        for(int i=index+1 ; i<array.length ;i++){
+            removedArray[i-1] = array[i];
+        }
+        System.out.println("original array is : "+Arrays.toString(array));
+        System.out.println("removed element array is : "+Arrays.toString(removedArray));
+        
+    }
+}
+
+-------------------------------------------------   remove element by number  --------------------------------------
+
+import java.util.*;
+
+public class rough{
+    public static void main(String[] args){   
+        Scanner sc = new Scanner(System.in);
+
+        int array[] = {1,2,3,4,5,6,7,8,9};
+        int removedArray[] = new int[array.length - 1];
+
+        int toBeRemoved = 4;
+        int index=0;
+        
+        for (int i =0; i<array.length ; i++){
+            if(array[i] == toBeRemoved)
+            index += i;           //3
+        }
+        for (int i=0; i<index;i++){
+            removedArray[i] = array[i];
+        }
+        for(int i=index+1 ; i<array.length ;i++){
+            removedArray[i-1] = array[i];
+        }
+        System.out.println("original array is : "+Arrays.toString(array));
+        System.out.println("removed element array is : "+Arrays.toString(removedArray));
+        
+    }
+}
