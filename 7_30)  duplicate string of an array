@@ -1,0 +1,21 @@
+import java.util.*;
+
+public class rough{
+    public static void main(String[] args){   
+        Scanner sc = new Scanner(System.in);
+
+        String array[] = {"kalapi", "mausamee","keshvi","kalapi","dimple","happy","shruti","keshvi"};
+        System.out.println("original array : "+ Arrays.toString(array));
+
+        System.out.println("dublicate elements are: ");
+        int j,i;
+        for(i=0 ;i<array.length; i++){
+            for(j=i+1 ;j<array.length ; j++){
+                if(array[i] == array[j] && (i != j)){
+                    System.out.print(array[i]+"  ");
+                }
+            }
+        }
+
+    }
+}
