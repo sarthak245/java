@@ -1,0 +1,28 @@
+
+import java.util.*;
+
+class rough{
+    public static void main(String args[]){
+        Scanner sc =  new Scanner(System.in);
+        
+       int even=0,odd=0,zero=0;
+
+       int input;
+       char ans;
+
+       do{
+        System.out.print("enter the number :  ");
+        input = sc.nextInt();
+        if(input%2 == 0 && input!=0){even++;}        
+        else if (input%2 != 0){odd++;}
+        else if(input == 0){zero++;}
+
+        System.out.println("you want to enter the number again?? y for yes , n for no");
+        ans = sc.next().charAt(0);
+
+       }while(ans == 'y' || ans == 'Y');
+
+       System.out.println("even numbers are  : "+ even + "\nodd numbers are  : "+ odd + "\nzeros  are  : "+ zero);
+        
+    }
+}
