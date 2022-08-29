@@ -1,0 +1,31 @@
+
+import java.util.*;
+
+class rough{
+    public static void main(String args[]){
+        Scanner sc =  new Scanner(System.in);
+        
+       int even=0,odd=0,zero=0;
+
+       int input;
+       char ans;
+       int max = Integer.MIN_VALUE;
+       int min = Integer.MAX_VALUE;
+
+       do{
+        System.out.print("enter the number :  ");
+        input = sc.nextInt();
+        
+        if(input >  max){max = input;}
+        if(input < min){min = input;}
+
+        System.out.println("you want to enter the number again?? y for yes , n for no");
+        ans = sc.next().charAt(0);
+
+       }while(ans == 'y' || ans == 'Y');
+
+       System.out.print("maximun is : "+ max); 
+       System.out.print("\nminimum is : "+ min); 
+    }
+}
+
